@@ -8,7 +8,7 @@
 particlesJS('particles-js', {
   particles: {
     color: '#fff',
-    color_random: false,
+    color_random: ['#99ffff', '#fe66cb', '#72e7a4', '#86eeee'],
     shape: 'circle', // "circle", "edge" or "triangle"
     opacity: {
       opacity: 1,
@@ -20,11 +20,11 @@ particlesJS('particles-js', {
       }
     },
     size: 4,
-    size_random: true,
-    nb: 150,
+    size_random: false,
+    nb: 100,
     line_linked: {
       enable_auto: true,
-      distance: 100,
+      distance: 200,
       color: '#fff',
       opacity: 1,
       width: 1,
@@ -36,7 +36,7 @@ particlesJS('particles-js', {
     },
     anim: {
       enable: true,
-      speed: 1
+      speed: 2
     }
   },
   interactivity: {
@@ -44,7 +44,7 @@ particlesJS('particles-js', {
     mouse: {
       distance: 300
     },
-    detect_on: 'canvas', // "canvas" or "window"
+    detect_on: 'window', // "canvas" or "window"
     mode: 'grab', // "grab" or false
     line_linked: {
       opacity: .5
@@ -58,7 +58,7 @@ particlesJS('particles-js', {
       onresize: {
         enable: true,
         mode: 'out', // "out" or "bounce"
-        density_auto: false,
+        density_auto: true,
         density_area: 800 // nb_particles = particles.nb * (canvas width *  canvas height / 1000) / density_area
       }
     }

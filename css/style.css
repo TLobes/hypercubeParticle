@@ -1,10 +1,45 @@
+@font-face {
+    font-family: 'wireframeregular';
+    src: url('../fonts/wireframe/wireframe-webfont.eot');
+    src: url('../fonts/wireframe/wireframe-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/wireframe/wireframe-webfont.woff2') format('woff2'),
+         url('../fonts/wireframe/wireframe-webfont.woff') format('woff'),
+         url('../fonts/wireframe/wireframe-webfont.ttf') format('truetype'),
+         url('../fonts/wireframe/wireframe-webfont.svg#wireframeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'polar_vertexregular';
+    src: url('../fonts/polarVertex/PolarVertex-Regular-webfont.eot');
+    src: url('../fonts/polarVertex/PolarVertex-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/polarVertex/PolarVertex-Regular-webfont.woff2') format('woff2'),
+         url('../fonts/polarVertex/PolarVertex-Regular-webfont.woff') format('woff'),
+         url('../fonts/polarVertex/PolarVertex-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/polarVertex/PolarVertex-Regular-webfont.svg#polar_vertexregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+font-family: 'Press Start 2P', cursive;
+
 html,body { 
-    margin:0;
+    margin:0px;
+    width: auto;
+    height: auto;
+    background: #ff9999;
 }
 
 canvas {
     display:block;
 	vertical-align:bottom;
+
+}
+
+p {
+    line-height: 1%;
 }
 
 #particles-js{
@@ -12,19 +47,43 @@ canvas {
     background:#ff9999
 }
 
-p {
-    line-height: 200px;
-    margin: auto;
-    margin-top: -100px;
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    text-align: center;
+.blending {
+    color: #ff9999;
+    background-blend-mode: normal;
+    z-index: -1;
 }
 
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    position: absolute;
+.polar {
+    color: #eeeeee;
+    font-family: 'polar_vertexregular', Fallback, Helvetica;
+    font-size: 96px;
+    text-shadow: 2px 2px #663333;
 }  
+
+.eightBit{
+    color: #eeeeee;
+    font-family: 'Press Start 2P', Fallback, Helvetica;
+    opacity: .75;
+    font-size: 16px;
+    text-shadow: 2px 2px #663333;
+}  
+
+.centered {
+    text-align: center;
+    display: block;
+    margin: auto;
+
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin-left: -(306/2)px;
+    margin-top: -(394/2)px;
+
+}
+
+#noClick {
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}

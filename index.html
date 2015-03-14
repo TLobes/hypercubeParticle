@@ -6,19 +6,20 @@
 <meta name="description" content="Hypercube title using particles.js">
 <meta name="author" content="Tim Lobes" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+<link href='http://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" media="screen" href="css/style.css">
 </head>
 <body>
-
 <div id="particles-js">
-	<img src="images/me-anim.gif" />
+	<div class="centered">
+		<img class="blending" src="images/hypercube_a.gif" />
+		<p class="polar">Hypercube IV</p>
+		<p class="eightBit">Rendering...</p>
+	</div>
 </div>  
-
 <!-- particles.js -->
-<script src="js/lib/particles.min.js"></script>
-
+<script src="js/lib/particles.js"></script>
 <script src="js/app.js"></script>  
-
 <!-- stats.js -->
 <script src="js/lib/stats.js"></script>
 <script>
@@ -36,6 +37,5 @@
   };
   requestAnimationFrame(update);
 </script>
-
 </body>
 </html>
